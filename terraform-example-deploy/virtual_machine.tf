@@ -34,7 +34,7 @@ resource "tls_private_key" "main" {
 }
 
 resource "azurerm_linux_virtual_machine" "example" {
-  name                = "example-machine"
+  name                = "example-machine-pr"
   resource_group_name = data.azurerm_resource_group.example.name
   location            = data.azurerm_resource_group.example.location
   size                = "Standard_F2"
