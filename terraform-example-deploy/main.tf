@@ -25,3 +25,10 @@ provider "azuread" {
 }
 
 data "azurerm_client_config" "current" {}
+
+
+module "create-virtual-machine" {
+
+  source              = "git::https://github.com/praveenambati1233/virtual-machine@main"
+  resource_group_name = "ambati-20241118-dev"
+}
